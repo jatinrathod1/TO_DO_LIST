@@ -1,0 +1,108 @@
+body {
+    background: radial-gradient(ellipse at center, rgba(12, 0, 17, 0.6) 0%, rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 1) 90%), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/31787/stars.jpg);
+    background-size: cover;
+    z-index: -5;
+    color: rgb(245, 230, 230);
+    overflow: hidden;
+    font-family: 'Monoton', monospace;
+    font-size: 20px;
+  }
+  
+  h1 {
+    animation: neon1 0.5s ease-in-out infinite alternate;
+  }  
+
+  @keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF11A7, 0 0 70px #FF11A7, 0 0 80px #FF11A7, 0 0 100px #FF11A7, 0 0 150px #FF1177;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF11A7, 0 0 35px #FF11A7, 0 0 40px #FF11A7, 0 0 50px #FF11A7, 0 0 75px #FF11A7;
+    }
+  }
+
+/* --------to do list--------- */
+
+#app {
+    border: 1px solid #81abff;
+    padding: 30px;
+    border-radius: 25px;
+    background: transparent;
+    align-content: space-around;
+    max-width: 400px;
+    margin: 0 auto;
+    background: transparent;
+    box-shadow: 0px 0px 0px rgba(0, 13, 255, 0.5);
+    color :rgba(208, 0, 255, 0.773);
+}
+.ad{
+    width: 320px;
+    padding: 8px;
+    background: transparent;
+    font-size: 20px;
+    text-align: right;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgb(79, 84, 189);
+    border-radius: 12px;
+    
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+.af{
+    background: rgb(167, 167, 245);
+    font-size: 25px;
+    border-radius: 12px; 
+}
+.filter {
+    margin: 18px;
+    background: transparent;
+    font-size: 25px;
+    border-radius: 12px; 
+    color: #81abff;
+}
+#filter{
+    text-align: center;
+    background: rgb(167, 167, 245);
+    font-size: 15px;
+    border-radius: 12px; 
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #ffe8e8;
+    background: rgb(167, 167, 245);
+    font-size: 15px;
+    border-radius: 12px; 
+    color: black;
+    
+}
+.task.completed {
+    background-color: #e0e0e0;
+    text-decoration: line-through;
+    background: rgb(167, 167, 245);
+    font-size: 15px;
+    border-radius: 12px;  
+    color: black;
+}
+.task button {
+    background-color: rgb(250, 97, 97);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    background: rgb(167, 167, 245);
+    font-size: 15px;
+    border-radius: 12px;  
+    color: black;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="to_do_list.css">
+    <link rel="stylesheet" href="to_do_list.js">
+</head>
+
+<body>
+
+    <div id="app">
+        <h1>To-Do List</h1>
+        <div class="ad">
+            <input type="text" id="task" placeholder="Add a new task">
+            <input type="number" id="importance" placeholder="Importance (1-10)">
+            <button class="af" onclick="addTask()">+</button>
+        </div>
+        <div class="filter">
+            <label>Filter Tasks: </label>
+            <select id="filter" onchange="filterTasks()">
+                <option value="all">All</option>
+                <option value="active">Active</option>
+                <option value="completed">Completed</option>
+            </select>
+        </div>
+        <div id="tasks">
+            <!-- Tasks will be displayed here -->
+        </div>
+        <button onclick="shareOnWhatsApp()">Share on WhatsApp</button>
+    </div>
+
+</body>
+
+</html>
+
+</body>
+
+</html>
