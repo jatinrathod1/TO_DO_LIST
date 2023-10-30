@@ -56,12 +56,12 @@ function renderTasks(filteredTasks = tasks) {
         }
 
         taskElement.innerHTML = `
-                        <span>${task.text} (Importance: ${task.importance})</span>
-                        <button onclick="toggleTaskStatus(${index})">
-                            ${task.completed ? "Uncomplete" : "Complete"}
-                        </button>
-                        <button onclick="deleteTask(${index})">Delete</button>
-                    `;
+                <span>${task.text} (Importance: ${task.importance})</span>
+                <button onclick="toggleTaskStatus(${index})">
+                    ${task.completed ? "Uncomplete" : "Complete"}
+                </button>
+                <button onclick="deleteTask(${index})">Delete</button>
+            `;
         tasksContainer.appendChild(taskElement);
     });
 
@@ -74,4 +74,12 @@ function shareOnWhatsApp() {
     const whatsappURL = `whatsapp://send?text=${encodeURIComponent(sharedText)}`;
     window.open(whatsappURL);
 }
+
+function clearData() {
+    // Clear all tasks and local storage data
+    tasks.length = 0;
+    localStorage.removeItem("tasks");
+    renderTasks(); // Update the task list display
+}
+
 renderTasks();
